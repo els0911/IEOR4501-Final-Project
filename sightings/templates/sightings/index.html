@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>sightings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  </head>
+  <style>
+  body{padding-top: 60px;}
+  table,th,td{border: 1px}
+  </style>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/sightings">Squirrel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/sightings">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="/sightings/add">Create A New Sighting</a>
+      <a class="nav-link" href="/map">Map</a>
+      <a class="nav-link" href="/sightings/stats">General Statistics</a>
+    </div>
+  </div>
+</nav>
+    <table class="table table-hover table-striped table-bordered table-responsive">
+      <thead class="thead-light">
+        <tr>
+          <th style="text-align:center;" nowrap="nowrap">Unique Squirrel ID</th>
+	  <th style="text-align:center;" nowrap="nowrap">Latitude</th>
+	  <th style="text-align:center;" nowrap="nowrap">Longitude</th>
+	  <th style="text-align:center;" nowrap="nowrap">Shift</th>
+	  <th style="text-align:center;" nowrap="nowrap">Date</th>
+	  <th style="text-align:center;" nowrap="nowrap">Age</th>
+	  <th style="text-align:center;" nowrap="nowrap">Primary Fur Color</th>
+	  <th style="text-align:center;" nowrap="nowrap">Location</th>
+	  <th style="text-align:center;" nowrap="nowrap">Specific Location</th>
+	  <th style="text-align:center;" nowrap="nowrap">Running</th>
+	  <th style="text-align:center;" nowrap="nowrap">Chasing</th>
+	  <th style="text-align:center;" nowrap="nowrap">Climbing</th>
+	  <th style="text-align:center;" nowrap="nowrap">Eating</th>
+	  <th style="text-align:center;" nowrap="nowrap">Foraging</th>
+	  <th style="text-align:center;" nowrap="nowrap">Other Activities</th>
+	  <th style="text-align:center;" nowrap="nowrap">Kuks</th>
+	  <th style="text-align:center;" nowrap="nowrap">Quaas</th>
+	  <th style="text-align:center;" nowrap="nowrap">Moans</th>
+	  <th style="text-align:center;" nowrap="nowrap">Tail flags</th>
+	  <th style="text-align:center;" nowrap="nowrap">Tail twitches</th>
+	  <th style="text-align:center;" nowrap="nowrap">Approaches</th>
+	  <th style="text-align:center;" nowrap="nowrap">Indifferent</th>
+	  <th style="text-align:center;" nowrap="nowrap">Runs from</th>
+      </thead>
+      <tbody>{% for row in squirrels %}
+        <tr>
+          <td nowrap="nowrap">
+            <a href="/sightings/{{row.Unique_Squirrel_ID}}/">{{row.Unique_Squirrel_ID}}</a></td>
+          <td nowrap="nowrap">{{row.Latitude}}</td>
+	  <td nowrap="nowrap">{{row.Longitude}}</td>
+	  <td nowrap="nowrap">{{row.Shift}}</td>
+	  <td nowrap="nowrap">{{row.Date}}</td>
+	  <td nowrap="nowrap">{{row.Age}}</td>
+	  <td nowrap="nowrap">{{row.Primary_Fur_Color}}</td>
+	  <td nowrap="nowrap">{{row.Location}}</td>
+	  <td>{{row.Specific_Location}}</td>
+	  <td nowrap="nowrap">{{row.Running}}</td>
+	  <td nowrap="nowrap">{{row.Chasing}}</td>
+	  <td nowrap="nowrap">{{row.Climbing}}</td>
+	  <td nowrap="nowrap">{{row.Eating}}</td>
+	  <td nowrap="nowrap">{{row.Foraging}}</td>
+	  <td>{{row.Other_Activities}}</td>
+	  <td nowrap="nowrap">{{row.Kuks}}</td>
+	  <td nowrap="nowrap">{{row.Quaas}}</td>
+	  <td nowrap="nowrap">{{row.Moans}}</td>
+	  <td nowrap="nowrap">{{row.Tail_Flags}}</td>
+	  <td nowrap="nowrap">{{row.Tail_Twitches}}</td>
+	  <td nowrap="nowrap">{{row.Approaches}}</td>
+	  <td nowrap="nowrap">{{row.Indifferent}}</td>
+	  <td nowrap="nowrap">{{row.Runs_From}}</td>
+        </tr>{% endfor %}</tbody>
+    </table>
+  <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>&copy; Squirrel Tracker</p>
+      </div>
+    </footer>
+
+    {# Don't use the slim version of jQuery! It does not have the ajax librarires! #}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    {% block extra_footer %}
+    {% endblock %}
+  </body>
+</html>
