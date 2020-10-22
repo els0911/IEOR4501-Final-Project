@@ -58,7 +58,7 @@ A view with general stats about the sightings.
 - Method: GET
 - Total number of squirrel sightings
 - Average latitiude of squirrel sightings
-- Average longitude of squirrel sightings
+-- Average longitude of squirrel sightings
 - Total number of adult squirrels
 - Total number of juvenile squirrels
 - Total number of black squirrels
