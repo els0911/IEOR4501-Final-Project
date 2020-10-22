@@ -35,6 +35,30 @@ A view that lists all squirrel sightings with links to view each sighting.
 - Located at: /sightings
 - Methods Supported: GET
 - A single link to the “add” sighting view
+- Fields to show:
+  - Latitude
+  - Longitude
+  - Unique Squirrel ID
+  - Shift
+  - Date
+  - Age
+  - Primary Fur Color
+  - Location
+  - Specific Location
+  - Running
+  - Chasing
+  - Climbing
+  - Eating
+  - Foraging
+  - Other Activities
+  - Kuks
+  - Quaas
+  - Moans
+  - Tail flags
+  - Tail twitches
+  - Approaches
+  - Indifferent
+  - Runs from
 
 
 ### Update
@@ -42,35 +66,82 @@ A view to update a particular sighting.
 
 - Located at: /sightings/<unique-squirrel-id>
 - Methods Supported: GET & POST
-
+- Fields to show:
+  - Latitude
+  - Longitude
+  - Unique Squirrel ID
+  - Shift
+  - Date
+  - Age
+  - Primary Fur Color
+  - Location
+  - Specific Location
+  - Running
+  - Chasing
+  - Climbing
+  - Eating
+  - Foraging
+  - Other Activities
+  - Kuks
+  - Quaas
+  - Moans
+  - Tail flags
+  - Tail twitches
+  - Approaches
+  - Indifferent
+  - Runs from
 
 ### Add
 A view to create a new sighting.
 
 - Located at: /sightings/add
 - Methods Supported: GET & POST
-
+- Fields to show:
+  - Latitude
+  - Longitude
+  - Unique Squirrel ID
+  - Shift
+  - Date
+  - Age
+  - Primary Fur Color
+  - Location
+  - Specific Location
+  - Running
+  - Chasing
+  - Climbing
+  - Eating
+  - Foraging
+  - Other Activities
+  - Kuks
+  - Quaas
+  - Moans
+  - Tail flags
+  - Tail twitches
+  - Approaches
+  - Indifferent
+  - Runs from
 
 ### General Statistics
 A view with general stats about the sightings.
 
 - Located at: /sightings/stats
 - Method: GET
-- Total number of squirrel sightings
+- General Stats:
+  - Total number of squirrel sightings
   - Average latitiude of squirrel sightings
-- Average longitude of squirrel sightings
-- Total number of adult squirrels
-- Total number of juvenile squirrels
-- Total number of black squirrels
-- Total number of Cinnamon squirrels
-- Total number of gray squirrels
-- Total number of squirrels above ground
-- Total number of squirrels on ground plane
-- Total number of running squirrels
-- Total number of chasing squirrels
-- Total number of climbing squirrels
-- Total number of eating squirrels
-- Total number of foraging squirrels
+  - Average longitude of squirrel sightings
+  - Total number of adult squirrels
+  - Total number of juvenile squirrels
+  - Total number of black squirrels
+  - Total number of Cinnamon squirrels
+  - Total number of gray squirrels
+  - Total number of squirrels above ground
+  - Total number of squirrels on ground plane
+  - Total number of running squirrels
+  - Total number of chasing squirrels
+  - Total number of climbing squirrels
+  - Total number of eating squirrels
+  - Total number of foraging squirrels
 
 
 ## Contributors
