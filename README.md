@@ -125,7 +125,7 @@ A view to create a new sighting.
 A view with general stats about the sightings.
 
 - Located at: /sightings/stats
-- Method: GET
+- Method Supported: GET
 - General Stats:
   - Total number of squirrel sightings
   - Average latitiude of squirrel sightings
