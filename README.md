@@ -153,4 +153,4 @@ Contributors: Els Dai, Ping Hsun Lee
 
 UNI: [**ed2912**](https://github.com/els0911), [**pl2775**](https://github.com/junglewill)
 
-[**Link**] to our final project repository
+[**Link**](https://github.com/els0911/IEOR4501-Final-Project) to our final project repository
