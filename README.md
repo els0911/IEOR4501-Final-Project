@@ -29,26 +29,49 @@ A view that shows a map that displays the location of the squirrel sightings on 
 - Will use the [**leafletjs**](https://leafletjs.com/) library for plotting
 
 
-
 ### Sightings
 A view that lists all squirrel sightings with links to view each sighting.
 
-[Sightings]
+- Located at: /sightings
+- Methods Supported: GET
+- A single link to the “add” sighting view
+
 
 ### Update
 A view to update a particular sighting.
 
-[Update]
+- Located at: /sightings/<unique-squirrel-id>
+- Methods Supported: GET & POST
+
 
 ### Add
 A view to create a new sighting.
 
-[Add]
+- Located at: /sightings/add
+- Methods Supported: GET & POST
+
 
 ### General Statistics
 A view with general stats about the sightings.
 
-[Stats]
+- Located at: /sightings/stats
+- Method: GET
+- Total number of squirrel sightings
+- Average latitiude of squirrel sightings
+- Average longitude of squirrel sightings
+- Total number of adult squirrels
+- Total number of juvenile squirrels
+- Total number of black squirrels
+- Total number of Cinnamon squirrels
+- Total number of gray squirrels
+- Total number of squirrels above ground
+- Total number of squirrels on ground plane
+- Total number of running squirrels
+- Total number of chasing squirrels
+- Total number of climbing squirrels
+- Total number of eating squirrels
+- Total number of foraging squirrels
+
 
 ## Contributors
 Group name: Project 9
@@ -58,5 +81,3 @@ Section: 2
 Contributors: Els Dai, Ping Hsun Lee
 
 UNI: [**ed2912**](https://github.com/els0911), [**pl2775**](https://github.com/junglewill)
-
-[**Link**] to our server
